@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="/static/css/music_stream.css"/>
+</head>
+
+<body>
+<table>
+  <tbody>
+    <tr id="albumlist"></tr>
+  </tbody>
+</table>
+
+<div class="album_stream">
+<table>
+  <tbody>
+  <tr>
+    <td>
+      <div id="album_art"></div>
+      <h2 id="artist_name"></h2>
+      <div id="album_name"></div>
+      <br>
+      <div class="audio_nav">
+        <div id="song_name"></div>
+        <div><div class="inline" id="current_time">0:00</div> / <div class="inline" id="duration">0:00</div></div>
+      </div>
+      <br>
+  
+      <audio id="audio_player">
+        <source id="audio_source" type="audio/mpeg">
+      </audio>
+  
+      <div id="audio_controls">
+        <div id="progress_bar">
+          <div id="progress"></div>
+          <div id="scrubber"></div>
+        </div>
+      </div>
+      <br>
+  
+      <div class="audio_nav">
+        <button class="button nav" id="previous_button">Prev</button>
+        <button class="button nav" id="play_pause_button">Play</button>
+        <button class="button nav" id="next_button">Next</button>
+      </div>
+    </td>
+    <td id="audio_nav_cell">
+      <ol class="left" id="tracklist">
+
+      </ol>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
+</body>
+
+<script src="music_stream.js"></script>
+</html>
