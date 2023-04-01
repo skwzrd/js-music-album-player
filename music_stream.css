@@ -1,0 +1,164 @@
+#progress_bar {
+  position: relative;
+  width: 25ch;
+  height: 2ch;
+  background-color: #c5c8c6;
+  border-radius: 4px;
+}
+
+#progress {
+  height: 100%;
+  background-color: #7d8ba7;
+  width: 0%;
+  border-radius: 4px;
+}
+
+#scrubber {
+  position: absolute;
+  top: -.6ch;
+  left: 0;
+  width: 1ch;
+  height: 3ch;
+  background-color: #7d8ba7;
+  border: 1px solid #000000;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.current_song {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.left {
+  text-align: left;
+}
+
+.album_stream {
+  width: 100%;
+}
+
+#song_name {
+  max-width: 20ch;
+  max-height: 2.5ch;
+  overflow: hidden;
+}
+
+#audio_nav_cell {
+  vertical-align: text-top;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#album_art {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+td {
+  padding: 2px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td.nonblock {
+  display: inline-block;
+}
+
+@media screen and (max-width: 950px) {   
+  tr {
+    display: block;
+  }
+  
+  td {
+    padding: 2px;
+    display: block;
+    text-align: center;
+  }
+
+  td.nonblock {
+    display: inline-block;
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 30vh;
+  margin: 5px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+li {
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+h1,h2,h3 {
+  margin: 10px auto;
+  display: block;
+}
+
+body {
+  background: #1d1f21;
+  color: #c5c8c6;
+  font-family: Segoe UI, sans-serif;
+  font-size: 14pt;
+  max-width: 900px;
+  margin: 2rem;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center_margins {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button,.nav {
+  width: 8ch;
+  height: 8ch;
+}
+
+.audio_nav {
+  text-align: left;
+}
+
+.inline {
+  display: inline;
+}
+
+.button {
+  font: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  color: #7d8ba7;
+  padding: 5px;
+  border: 1px solid #7d8ba7;
+  border-radius: 4px;
+}
+
+.button:hover {
+  font: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  color: #38404e;
+  padding: 5px;
+  border: 1px solid #7d8ba7;
+}
