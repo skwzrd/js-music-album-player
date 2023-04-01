@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const audioPlayer = document.getElementById('audio_player');
   const albumName = document.getElementById('album_name');
   const artistName = document.getElementById('artist_name');
-  const songName = document.getElementById('song_name');
   const audioSource = document.getElementById('audio_source');
   const previousButton = document.getElementById('previous_button');
   const nextButton = document.getElementById('next_button');
